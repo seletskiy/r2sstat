@@ -1,0 +1,8 @@
+%% vim: et ts=4 sw=4 ft=erlang
+
+{application, r2sstat, [
+    {description, "R2S Viewer"},
+    {vsn, git},
+    {registered, []},
+    {applications, [kernel, stdlib, getopt]},
+    {mod, {r2sstat, []}}]}.
