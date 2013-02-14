@@ -157,7 +157,7 @@ print_date() ->
     {{Y, M, D}, {Hour, Min, Sec}} = erlang:localtime(),
     lists:flatten(
         io_lib:format("~2..0B/~2..0B/~2..0B ~2..0B:~2..0B:~2..0B", [
-            Y rem 1000, M, D, Hour, Min, Sec])).
+            D, M, Y rem 1000, Hour, Min, Sec])).
 
 print_header([]) ->
     io:format("~n");
