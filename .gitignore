@@ -2,3 +2,4 @@ ebin/
 deps/
 doc/
 *.log
+r2sstat
